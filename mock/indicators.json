@@ -1,0 +1,464 @@
+[
+  {
+    "title": "Sales: Doanh thu khách hàng theo tuần",
+    "target": 180000000,
+    "quaterAmount": 199400000,
+    "user": {
+      "id": "1",
+      "name": "Phong",
+      "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "times": [
+      {
+        "date": "2023-08-06T18:12:19.391Z",
+        "amount": 113888615,
+        "target": 113979001
+      },
+      {
+        "date": "2023-07-30T18:12:19.391Z",
+        "amount": 52458841,
+        "target": 183227425
+      },
+      {
+        "date": "2023-07-23T18:12:19.391Z",
+        "amount": 53076074,
+        "target": 125620295
+      },
+      {
+        "date": "2023-07-16T18:12:19.391Z",
+        "amount": 25337309,
+        "target": 108181597
+      },
+      {
+        "date": "2023-07-09T18:12:19.391Z",
+        "amount": 114675575,
+        "target": 159509130
+      },
+      {
+        "date": "2023-07-02T18:12:19.391Z",
+        "amount": 168488468,
+        "target": 127841061
+      },
+      {
+        "date": "2023-06-25T18:12:19.391Z",
+        "amount": 12997398,
+        "target": 124788575
+      },
+      {
+        "date": "2023-06-18T18:12:19.391Z",
+        "amount": 124257042,
+        "target": 161753888
+      },
+      {
+        "date": "2023-06-11T18:12:19.391Z",
+        "amount": 11398467,
+        "target": 69351687
+      },
+      {
+        "date": "2023-06-04T18:12:19.392Z",
+        "amount": 98529557,
+        "target": 113903659
+      },
+      {
+        "date": "2023-05-28T18:12:19.392Z",
+        "amount": 85659540,
+        "target": 182405998
+      },
+      {
+        "date": "2023-05-21T18:12:19.392Z",
+        "amount": 52692575,
+        "target": 63283225
+      },
+      {
+        "date": "2023-05-14T18:12:19.392Z",
+        "amount": 95453598,
+        "target": 99727472
+      }
+    ]
+  },
+  {
+    "title": "Sales: Số lượng KH meeting mỗi tuần (tất cả sales)",
+    "target": 10,
+    "quaterAmount": 94,
+    "user": {
+      "id": "1",
+      "name": "Phong",
+      "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "times": [
+      {
+        "date": "2023-08-06T18:09:14.004Z",
+        "amount": 6,
+        "target": 1
+      },
+      {
+        "date": "2023-07-30T18:09:14.005Z",
+        "amount": 9,
+        "target": 4
+      },
+      {
+        "date": "2023-07-23T18:09:14.005Z",
+        "amount": 12,
+        "target": 9
+      },
+      {
+        "date": "2023-07-16T18:09:14.005Z",
+        "amount": 8,
+        "target": 2
+      },
+      {
+        "date": "2023-07-09T18:09:14.005Z",
+        "amount": 5,
+        "target": 10
+      },
+      {
+        "date": "2023-07-02T18:09:14.005Z",
+        "amount": 7,
+        "target": 6
+      },
+      {
+        "date": "2023-06-25T18:09:14.005Z",
+        "amount": 6,
+        "target": 5
+      },
+      {
+        "date": "2023-06-18T18:09:14.005Z",
+        "amount": 6,
+        "target": 9
+      },
+      {
+        "date": "2023-06-11T18:09:14.005Z",
+        "amount": 3,
+        "target": 11
+      },
+      {
+        "date": "2023-06-04T18:09:14.005Z",
+        "amount": 1,
+        "target": 11
+      },
+      {
+        "date": "2023-05-28T18:09:14.005Z",
+        "amount": 0,
+        "target": 7
+      },
+      {
+        "date": "2023-05-21T18:09:14.005Z",
+        "amount": 9,
+        "target": 4
+      },
+      {
+        "date": "2023-05-14T18:09:14.005Z",
+        "amount": 1,
+        "target": 10
+      }
+    ]
+  },
+  {
+    "title": "Sales: Doanh số chào giá",
+    "target": 100000000,
+    "quaterAmount": 0,
+    "user": {
+      "id": "1",
+      "name": "Phong",
+      "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "times": [
+      {
+        "date": "2023-08-06T18:12:19.391Z",
+        "amount": 113888615,
+        "target": 113979001
+      },
+      {
+        "date": "2023-07-30T18:12:19.391Z",
+        "amount": 52458841,
+        "target": 183227425
+      },
+      {
+        "date": "2023-07-23T18:12:19.391Z",
+        "amount": 53076074,
+        "target": 125620295
+      },
+      {
+        "date": "2023-07-16T18:12:19.391Z",
+        "amount": 25337309,
+        "target": 108181597
+      },
+      {
+        "date": "2023-07-09T18:12:19.391Z",
+        "amount": 114675575,
+        "target": 159509130
+      },
+      {
+        "date": "2023-07-02T18:12:19.391Z",
+        "amount": 168488468,
+        "target": 127841061
+      },
+      {
+        "date": "2023-06-25T18:12:19.391Z",
+        "amount": 12997398,
+        "target": 124788575
+      },
+      {
+        "date": "2023-06-18T18:12:19.391Z",
+        "amount": 124257042,
+        "target": 161753888
+      },
+      {
+        "date": "2023-06-11T18:12:19.391Z",
+        "amount": 11398467,
+        "target": 69351687
+      },
+      {
+        "date": "2023-06-04T18:12:19.392Z",
+        "amount": 98529557,
+        "target": 113903659
+      },
+      {
+        "date": "2023-05-28T18:12:19.392Z",
+        "amount": 85659540,
+        "target": 182405998
+      },
+      {
+        "date": "2023-05-21T18:12:19.392Z",
+        "amount": 52692575,
+        "target": 63283225
+      },
+      {
+        "date": "2023-05-14T18:12:19.392Z",
+        "amount": 95453598,
+        "target": 99727472
+      }
+    ]
+  },
+  {
+    "title": "MKT_Số lượng lead tiềm năng",
+    "target": 14,
+    "quaterAmount": 310,
+    "user": {
+      "id": "1",
+      "name": "Phong",
+      "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "times": [
+      {
+        "date": "2023-08-06T18:09:58.651Z",
+        "amount": 7,
+        "target": 4
+      },
+      {
+        "date": "2023-07-30T18:09:58.651Z",
+        "amount": 11,
+        "target": 2
+      },
+      {
+        "date": "2023-07-23T18:09:58.651Z",
+        "amount": 3,
+        "target": 9
+      },
+      {
+        "date": "2023-07-16T18:09:58.651Z",
+        "amount": 11,
+        "target": 3
+      },
+      {
+        "date": "2023-07-09T18:09:58.651Z",
+        "amount": 8,
+        "target": 6
+      },
+      {
+        "date": "2023-07-02T18:09:58.651Z",
+        "amount": 3,
+        "target": 2
+      },
+      {
+        "date": "2023-06-25T18:09:58.651Z",
+        "amount": 6,
+        "target": 2
+      },
+      {
+        "date": "2023-06-18T18:09:58.651Z",
+        "amount": 1,
+        "target": 2
+      },
+      {
+        "date": "2023-06-11T18:09:58.651Z",
+        "amount": 2,
+        "target": 12
+      },
+      {
+        "date": "2023-06-04T18:09:58.651Z",
+        "amount": 9,
+        "target": 2
+      },
+      {
+        "date": "2023-05-28T18:09:58.651Z",
+        "amount": 5,
+        "target": 5
+      },
+      {
+        "date": "2023-05-21T18:09:58.651Z",
+        "amount": 2,
+        "target": 9
+      },
+      {
+        "date": "2023-05-14T18:09:58.651Z",
+        "amount": 5,
+        "target": 6
+      }
+    ]
+  },
+  {
+    "title": "MKT_Số lượng qualified lead tiềm năng",
+    "target": 7,
+    "quaterAmount": 167,
+    "user": {
+      "id": "1",
+      "name": "Phong",
+      "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "times": [
+      {
+        "date": "2023-08-06T18:10:59.049Z",
+        "amount": 9,
+        "target": 12
+      },
+      {
+        "date": "2023-07-30T18:10:59.049Z",
+        "amount": 6,
+        "target": 0
+      },
+      {
+        "date": "2023-07-23T18:10:59.049Z",
+        "amount": 11,
+        "target": 3
+      },
+      {
+        "date": "2023-07-16T18:10:59.049Z",
+        "amount": 6,
+        "target": 10
+      },
+      {
+        "date": "2023-07-09T18:10:59.049Z",
+        "amount": 11,
+        "target": 9
+      },
+      {
+        "date": "2023-07-02T18:10:59.049Z",
+        "amount": 10,
+        "target": 7
+      },
+      {
+        "date": "2023-06-25T18:10:59.049Z",
+        "amount": 5,
+        "target": 8
+      },
+      {
+        "date": "2023-06-18T18:10:59.049Z",
+        "amount": 12,
+        "target": 11
+      },
+      {
+        "date": "2023-06-11T18:10:59.049Z",
+        "amount": 3,
+        "target": 6
+      },
+      {
+        "date": "2023-06-04T18:10:59.049Z",
+        "amount": 6,
+        "target": 5
+      },
+      {
+        "date": "2023-05-28T18:10:59.049Z",
+        "amount": 3,
+        "target": 8
+      },
+      {
+        "date": "2023-05-21T18:10:59.049Z",
+        "amount": 6,
+        "target": 2
+      },
+      {
+        "date": "2023-05-14T18:10:59.049Z",
+        "amount": 7,
+        "target": 4
+      }
+    ]
+  },
+  {
+    "title": "Product: Số lần khách hàng phàn nàn về tính năng, và lỗi nghiêm trọng của sản phẩm",
+    "target": 0,
+    "quaterAmount": 8,
+    "user": {
+      "id": "1",
+      "name": "Phong",
+      "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "times": [
+      {
+        "date": "2023-08-06T18:11:36.044Z",
+        "amount": 1,
+        "target": 1
+      },
+      {
+        "date": "2023-07-30T18:11:36.044Z",
+        "amount": 2,
+        "target": 1
+      },
+      {
+        "date": "2023-07-23T18:11:36.044Z",
+        "amount": 1,
+        "target": 1
+      },
+      {
+        "date": "2023-07-16T18:11:36.044Z",
+        "amount": 1,
+        "target": 2
+      },
+      {
+        "date": "2023-07-09T18:11:36.044Z",
+        "amount": 1,
+        "target": 0
+      },
+      {
+        "date": "2023-07-02T18:11:36.044Z",
+        "amount": 1,
+        "target": 1
+      },
+      {
+        "date": "2023-06-25T18:11:36.044Z",
+        "amount": 0,
+        "target": 1
+      },
+      {
+        "date": "2023-06-18T18:11:36.044Z",
+        "amount": 2,
+        "target": 1
+      },
+      {
+        "date": "2023-06-11T18:11:36.044Z",
+        "amount": 1,
+        "target": 1
+      },
+      {
+        "date": "2023-06-04T18:11:36.044Z",
+        "amount": 1,
+        "target": 1
+      },
+      {
+        "date": "2023-05-28T18:11:36.044Z",
+        "amount": 0,
+        "target": 1
+      },
+      {
+        "date": "2023-05-21T18:11:36.044Z",
+        "amount": 2,
+        "target": 0
+      },
+      {
+        "date": "2023-05-14T18:11:36.044Z",
+        "amount": 2,
+        "target": 2
+      }
+    ]
+  }
+]

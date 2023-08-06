@@ -1,0 +1,119 @@
+[
+  {
+    "title": "MKT/Sales - Hoàn thành GIẢI PHÁP/dựa trên 3 Unique trên website",
+    "status": "PROCESSING",
+    "statusName": "Đang thực hiện",
+    "percent": 49,
+    "milestones": [
+      {
+        "title": "Thiết kế trang LDP Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "id": "1",
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      },
+      {
+        "title": "Video Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "id": "2",
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      },
+      {
+        "title": "Content quảng cáo và email truyền thông Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "id": "3",
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      }
+    ]
+  },
+  {
+    "title": "MKT/Sales - Hoàn thành GIẢI PHÁP/dựa trên 3 Unique trên website",
+    "status": "PROCESSING",
+    "statusName": "Đang thực hiện",
+    "percent": 49,
+    "milestones": [
+      {
+        "title": "Thiết kế trang LDP Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      },
+      {
+        "title": "Video Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      },
+      {
+        "title": "Content quảng cáo và email truyền thông Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      }
+    ]
+  },
+  {
+    "title": "MKT/Sales - Hoàn thành GIẢI PHÁP/dựa trên 3 Unique trên website",
+    "status": "PROCESSING",
+    "statusName": "Đang thực hiện",
+    "percent": 49,
+    "milestones": [
+      {
+        "title": "Thiết kế trang LDP Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      },
+      {
+        "title": "Video Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      },
+      {
+        "title": "Content quảng cáo và email truyền thông Simplamo AI",
+        "status": "PENDING",
+        "statusName": "Chưa thực hiện",
+        "percent": 4,
+        "user": {
+          "name": "Phong",
+          "avatar": "https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        }
+      }
+    ]
+  }
+]
