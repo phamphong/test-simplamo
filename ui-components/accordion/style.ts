@@ -1,28 +1,35 @@
-export const TabsStyleConfig = {
-  default: {
-    tabList: [
-      "flex gap-2 w-full bg-white"
+import clsx from "clsx"
+
+export type AccordionItemClassNames = {
+  wrapper: clsx.ClassValue;
+  header: clsx.ClassValue;
+  trigger: clsx.ClassValue;
+  icon: clsx.ClassValue;
+  title: clsx.ClassValue;
+  content: clsx.ClassValue;
+}
+
+export const AccordionStyleConfig: { wrapper: clsx.ClassValue, item: AccordionItemClassNames } = {
+  wrapper: "w-full border border-gray-300 rounded",
+  item: {
+    wrapper: [
+      "rounded w-full overflow-hidden border-b last:border-0 border-dashed border-gray-300"
     ],
-    tabTrigger: [
-      "group relative py-5",
-      "text-gray",
-      "radix-state-active:text-primary",
-      "radix-state-active:border-b-gray-700",
-      "focus-visible:radix-state-active:border-b-transparent",
-      "radix-state-inactive:bg-gray-50",
-      "focus:radix-state-active:border-b-red",
-      "focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+    header: [
+      "bg-white px-4 py-4"
     ],
-    tabTitle: [
-      "text-sm font-medium",
+    trigger: [
+      "text-left group radix-state-open:rounded-t-lg radix-state-closed:rounded-lg"
     ],
-    tabInkBar: [
-      "hidden group-radix-state-active:block",
-      "absolute bottom-0 left-0 right-0",
-      "h-1 rounded-t bg-primary"
+    icon: [
+      "h-5 w-5 shrink-0 text-gray-700 ease-in-out duration-300",
+      "group-radix-state-open:rotate-90"
     ],
-    tabContent: [
-      "rounded-b-lg bg-white px-2 py-2 text-sm"
+    title: [
+      "text-sm font-medium text-gray-900"
+    ],
+    content: [
+      "bg-gray-100 pl-4 pb-3 shadow-inner"
     ]
   }
 }

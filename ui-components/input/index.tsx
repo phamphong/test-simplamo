@@ -1,11 +1,12 @@
 import { FC } from "react";
 import clsx from "clsx";
+import { InputStyleConfig, inputStyleConfig } from "./style";
 
 export interface BaseInputProps {
   prefix?: React.ReactNode;
   suffix?: React.ReactNode;
   disabled?: boolean;
-  className?: string;
+  classNames?: InputStyleConfig;
   styles?: React.CSSProperties;
   [key: `data-${string}`]: string;
 }
@@ -15,34 +16,41 @@ type MergedHTMLAttributes = Omit<React.HTMLAttributes<HTMLElement> &
 const Input: FC<BaseInputProps & MergedHTMLAttributes> = ({
   type,
   disabled,
-  className,
+  classNames,
   styles,
   prefix,
   suffix,
+  placeholder,
   onClick,
   ...rest }) => {
 
   return <label
     {...rest}
     className={clsx(
-      className,
-      "flex gap-2 px-2 py-1 items-center bg-gray-100 rounded max-w-full",
-      "focus-within:ring-2",
+      inputStyleConfig.wrapper,
+      classNames?.wrapper,
     )} style={styles}>
     {prefix &&
-      <span className="text-xl text-gray-400">
+      <span className={clsx(
+        inputStyleConfig.prefix,
+        classNames?.prefix,
+      )}>
         {prefix}
       </span>
     }
     <input
-      placeholder="Tìm kiếm ..."
+      placeholder={placeholder}
       type={type}
       className={clsx(
-        "bg-transparent focus:outline-none flex-1 min-w-0"
+        inputStyleConfig.input,
+        classNames?.input,
       )}
     />
     {suffix &&
-      <span className="text-xl text-gray-400">
+      <span className={clsx(
+        inputStyleConfig.suffix,
+        classNames?.suffix,
+      )}>
         {suffix}
       </span>
     }

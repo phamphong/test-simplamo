@@ -1,12 +1,29 @@
-export const tooltipStyleConfig = {
-  titleWrapper: [
-    "radix-side-top:animate-slide-down-fade",
-    "radix-side-right:animate-slide-left-fade",
-    "radix-side-bottom:animate-slide-up-fade",
-    "radix-side-left:animate-slide-right-fade",
-    "inline-flex items-center rounded-md px-3 py-2",
-    "bg-gray-800 bg-opacity-90"
+import clsx from "clsx"
+
+export interface RadioGroupStyleConfig {
+  wrapper?: clsx.ClassValue;
+  label?: clsx.ClassValue;
+  input?: clsx.ClassValue;
+  content?: clsx.ClassValue
+}
+
+export const radioGroupStyleConfig: RadioGroupStyleConfig = {
+  wrapper: [
+    "flex gap-2 px-2 py-1",
+    "shadow-inner shadow-gray-300 bg-gray-200",
+    "rounded-lg text-sm leading-4"
   ],
-  title: "block text-xs leading-none text-white",
-  arrow: "fill-current text-gray-800 text-opacity-90",
+  input: [
+    "hidden peer"
+  ],
+  label: [
+    "inline-flex items-center justify-between w-full px-3 py-1",
+    "text-black font-semibold bg-transparent rounded-md cursor-pointer",
+    "peer-checked:border-blue-600 peer-checked:bg-white",
+    "hover:text-gray-600 hover:bg-gray-100",
+    "drop-shadow-sm"
+  ],
+  content: [
+    "block"
+  ]
 }

@@ -1,8 +1,8 @@
 import clsx from "clsx";
 
 export type RateStyleConfig = {
-  wrapper: clsx.ClassValue;
-  icon: clsx.ClassValue;
+  wrapper?: clsx.ClassValue;
+  icon?: clsx.ClassValue;
 }
 
 export const rateStyleConfig: RateStyleConfig = {

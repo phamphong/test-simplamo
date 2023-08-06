@@ -35,7 +35,7 @@ export const TargetList: FC<TargetListProps> = ({ list }) => {
                 ["PROCESSING"]: <Chip type='info' >{item.statusName}</Chip>
               }[item.status]}
               <Progress percent={item.percent} size="medium" className="text-info" />
-              {/* <Rate value={4} disabled /> */}
+              <Rate value={4} classNames={{ wrapper: "text-primary" }} />
               <InfoCircledIcon width="1em" height="1em" className="text-primary text-lg" />
             </FlexContainer.FlexGroup>
           ]}

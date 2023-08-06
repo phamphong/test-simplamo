@@ -1,65 +1,74 @@
 import { clsx } from "clsx";
 import React, { FC, PropsWithChildren, ReactNode } from "react";
+import { TimelineItemClasses, TimelineStyleConfig, TimelineWrapperClasses } from "./style";
 
 interface TimelineProps {
   head?: ReactNode;
   children: React.ReactElement<TimelineItemProps> | React.ReactElement<TimelineItemProps>[];
+  classNames?: TimelineWrapperClasses;
 }
 
 export const Timeline: FC<TimelineProps> = ({
   head,
   children,
+  classNames
 }) => {
 
   return (
     <>
       {head &&
         <ul>
-          <li className="group relative pl-1 border-gray-300 pb-2">
+          <li className={clsx(
+            TimelineStyleConfig.wrapper.headWrapper,
+            classNames?.headWrapper,
+          )}>
             <div className={clsx(
-              "absolute left-1 -translate-x-1/2px",
-              "h-full w-0 z-10",
-              "border-l border-gray-300",
+              TimelineStyleConfig.wrapper.headLine,
+              classNames?.headLine,
             )} />
             <div className={clsx(
-              "absolute left-1 top-1/2 -translate-x-1/2 -translate-y-2",
-              "w-2 h-2 bg-gray-300 rounded z-10",
+              TimelineStyleConfig.wrapper.headDot,
+              classNames?.headDot,
             )} />
             <div className={clsx(
-              "pl-3 py-2 pr-2 -translate-x-1/2px",
-              "border-b border-gray-300",
-              "bg-gray-200 z-0"
+              TimelineStyleConfig.wrapper.head,
+              classNames?.head,
             )}>
               {head}
             </div>
           </li>
         </ul>
       }
-      <ul className="" >
+      <ul className={clsx(
+        TimelineStyleConfig.wrapper.content,
+        classNames?.content,
+      )} >
         {children}
       </ul>
     </>
   );
 };
 
-interface TimelineItemProps extends PropsWithChildren { }
+interface TimelineItemProps extends PropsWithChildren {
+  classNames?: TimelineItemClasses;
+}
 
-export const TimelineItem: FC<TimelineItemProps> = ({ children }) => {
-  return <li className="group relative pl-4 border-gray-300 mr-2">
+export const TimelineItem: FC<TimelineItemProps> = ({ children, classNames }) => {
+  return <li className={clsx(
+    TimelineStyleConfig.item.wrapper,
+    classNames?.wrapper
+  )}>
     <div className={clsx(
-      "absolute left-1 -translate-x-1/2px",
-      "h-full w-0",
-      "border-l border-gray-300",
-      "group-last:h-1/2 group-last-of-type:w-3 group-last-of-type:border-b group-last-of-type:rounded-bl",
+      TimelineStyleConfig.item.line,
+      classNames?.line
     )} />
     <div className={clsx(
-      "absolute left-1 top-1/2 -translate-x-1/2 -translate-y-1/2",
-      "w-2 h-2 bg-gray-300 rounded",
-      "group-last-of-type:hidden",
+      TimelineStyleConfig.item.dot,
+      classNames?.dot
     )} />
     <div className={clsx(
-      "px-3 py-2 bg-white border-x border-t border-gray-300 -translate-x-1/2px",
-      "group-first-of-type:rounded-t group-last-of-type:rounded-b group-last-of-type:border-b"
+      TimelineStyleConfig.item.content,
+      classNames?.content
     )}>
       {children}
     </div>

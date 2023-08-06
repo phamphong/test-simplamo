@@ -1,28 +1,60 @@
-export const TabsStyleConfig = {
-  default: {
-    tabList: [
-      "flex gap-2 w-full bg-white"
+import clsx from "clsx"
+
+export interface TimelineWrapperClasses {
+  head?: clsx.ClassValue;
+  headWrapper?: clsx.ClassValue;
+  content?: clsx.ClassValue;
+  headLine?: clsx.ClassValue;
+  headDot?: clsx.ClassValue;
+}
+
+export interface TimelineItemClasses {
+  content?: clsx.ClassValue;
+  wrapper?: clsx.ClassValue;
+  line?: clsx.ClassValue;
+  dot?: clsx.ClassValue;
+}
+
+export const TimelineStyleConfig: {
+  wrapper: TimelineWrapperClasses,
+  item: TimelineItemClasses
+} = {
+  wrapper: {
+    head: [
+      "pl-3 py-2 pr-2 -translate-x-1/2px",
+      "border-b border-gray-300",
+      "bg-gray-200 z-0"
     ],
-    tabTrigger: [
-      "group relative py-5",
-      "text-gray",
-      "radix-state-active:text-primary",
-      "radix-state-active:border-b-gray-700",
-      "focus-visible:radix-state-active:border-b-transparent",
-      "radix-state-inactive:bg-gray-50",
-      "focus:radix-state-active:border-b-red",
-      "focus:z-10 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+    headWrapper: ["group relative pl-1 border-gray-300 pb-2"],
+    headDot: [
+      "absolute left-1 top-1/2 -translate-x-1/2 -translate-y-2",
+      "w-2 h-2 bg-gray-300 rounded z-10",
     ],
-    tabTitle: [
-      "text-sm font-medium",
+    headLine: [
+      "absolute left-1 -translate-x-1/2px",
+      "h-full w-0 z-10",
+      "border-l border-gray-300",
     ],
-    tabInkBar: [
-      "hidden group-radix-state-active:block",
-      "absolute bottom-0 left-0 right-0",
-      "h-1 rounded-t bg-primary"
+    content: [],
+  },
+  item: {
+    content: [
+      "px-3 py-2 bg-white border-x border-t border-gray-300 -translate-x-1/2px",
+      "group-first-of-type:rounded-t group-last-of-type:rounded-b group-last-of-type:border-b"
     ],
-    tabContent: [
-      "rounded-b-lg bg-white px-2 py-2 text-sm"
-    ]
+    wrapper: [
+      "group relative pl-4 border-gray-300 mr-2"
+    ],
+    dot: [
+      "absolute left-1 top-1/2 -translate-x-1/2 -translate-y-1/2",
+      "w-2 h-2 bg-gray-300 rounded",
+      "group-last-of-type:hidden",
+    ],
+    line: [
+      "absolute left-1 -translate-x-1/2px",
+      "h-full w-0",
+      "border-l border-gray-300",
+      "group-last:h-1/2 group-last-of-type:w-3 group-last-of-type:border-b group-last-of-type:rounded-bl",
+    ],
   }
 }

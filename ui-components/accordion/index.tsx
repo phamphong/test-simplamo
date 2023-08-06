@@ -1,13 +1,15 @@
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { TriangleRightIcon } from "@radix-ui/react-icons";
-import { clsx } from "clsx";
-import React, { FC, PropsWithChildren, ReactNode, useState } from "react";
+import clsx from "clsx";
+import React, { FC, PropsWithChildren, ReactNode } from "react";
 import FlexContainer from "../flex-container";
+import { AccordionItemClassNames, AccordionStyleConfig } from "./style";
 
 interface AccordionProps {
   children: React.ReactElement<AccordionItemProps> | React.ReactElement<AccordionItemProps>[],
   value?: string;
   defaultValue?: string;
+  className?: clsx.ClassValue;
   onChange?: (value: string) => void;
 }
 
@@ -16,6 +18,7 @@ const Accordion: FC<AccordionProps> = ({
   value,
   defaultValue,
   onChange,
+  className,
   ...rest
 }) => {
 
@@ -27,7 +30,8 @@ const Accordion: FC<AccordionProps> = ({
       onValueChange={onChange}
       defaultValue={defaultValue ?? React.Children.map(children, e => e).at(0)?.props.value}
       className={clsx(
-        "w-full border border-gray-300 rounded"
+        AccordionStyleConfig.wrapper,
+        className
       )}
     >
       {children}
@@ -40,28 +44,39 @@ interface AccordionItemProps extends PropsWithChildren {
   value: string;
   actions?: React.ReactNode[];
   content?: React.ReactNode;
+  classNames?: AccordionItemClassNames;
 }
 
-export const AccordionItem: FC<AccordionItemProps> = ({ value, title, actions, content, children }) => {
+export const AccordionItem: FC<AccordionItemProps> = ({ value, title, actions, content, children, classNames }) => {
   return <AccordionPrimitive.Item
     value={value}
-    className="rounded w-full overflow-hidden border-b last:border-0 border-dashed border-gray-300"
+    className={clsx(
+      AccordionStyleConfig.item.wrapper,
+      classNames?.wrapper
+    )}
   >
-    <AccordionPrimitive.Header className="bg-white px-4 py-4">
+    <AccordionPrimitive.Header className={clsx(
+      AccordionStyleConfig.item.header,
+      classNames?.header
+    )}>
       <FlexContainer.FlexGroupBetween>
         <AccordionPrimitive.Trigger
           className={clsx(
-            "text-left group radix-state-open:rounded-t-lg radix-state-closed:rounded-lg",
+            AccordionStyleConfig.item.trigger,
+            classNames?.trigger
           )}
         >
           <FlexContainer.SpanGroup nowrap>
             <TriangleRightIcon
               className={clsx(
-                "h-5 w-5 shrink-0 text-gray-700 ease-in-out duration-300",
-                "group-radix-state-open:rotate-90"
+                AccordionStyleConfig.item.icon,
+                classNames?.icon
               )}
             />
-            <span className="text-sm font-medium text-gray-900">
+            <span className={clsx(
+              AccordionStyleConfig.item.title,
+              classNames?.title
+            )}>
               {title}
             </span>
           </FlexContainer.SpanGroup>
@@ -71,7 +86,10 @@ export const AccordionItem: FC<AccordionItemProps> = ({ value, title, actions, c
         </FlexContainer.FlexGroup>
       </FlexContainer.FlexGroupBetween>
     </AccordionPrimitive.Header>
-    <AccordionPrimitive.Content className="bg-gray-100 pl-4 pb-3 shadow-inner">
+    <AccordionPrimitive.Content className={clsx(
+      AccordionStyleConfig.item.content,
+      classNames?.content
+    )}>
       {children ?? content}
     </AccordionPrimitive.Content>
   </AccordionPrimitive.Item>

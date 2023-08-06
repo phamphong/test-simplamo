@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { radioGroupStyleConfig } from "./style";
 
 interface OptionProps {
   label: React.ReactNode;
@@ -16,9 +17,15 @@ interface RadioGroupProps {
 }
 
 export const RadioGroup = ({ options, name, value, defaultValue, onChange }: RadioGroupProps) => {
-  name ??= new Date().getTime().toString();
+  const [fieldName, setFieldName] = useState(name);
   defaultValue ??= options?.at(0)?.value;
   const [currentValue, setCurrentValue] = useState(value ?? defaultValue);
+
+  useEffect(() => {
+    if (!fieldName) {
+      setFieldName(new Date().getTime().toString());
+    }
+  }, [fieldName])
 
   const onCurrentValueChange = useCallback((val: string) => {
     setCurrentValue(val);
@@ -26,30 +33,32 @@ export const RadioGroup = ({ options, name, value, defaultValue, onChange }: Rad
   }, [onChange]);
 
   return (
-    <ul className="flex gap-2 px-2 py-1 shadow-inner shadow-gray-300 bg-gray-200 rounded-lg text-sm leading-4">
+    <ul className={clsx(
+      radioGroupStyleConfig.wrapper
+    )}>
       {options.map((option, index) =>
         <li key={`option-${index}`} >
           <input
             type="radio"
-            id={`${name}-${option.value}`}
-            name={name}
+            id={`${fieldName}-${option.value}`}
+            name={fieldName}
             value={option.value}
-            className="hidden peer"
+            className={clsx(
+              radioGroupStyleConfig.input
+            )}
             required
             onChange={(e) => onCurrentValueChange(option.value)}
             checked={option.value === currentValue}
           />
           <label
-            htmlFor={`${name}-${option.value}`}
+            htmlFor={`${fieldName}-${option.value}`}
             className={clsx(
-              "inline-flex items-center justify-between w-full px-3 py-1",
-              "text-black font-semibold bg-transparent rounded-md cursor-pointer",
-              "peer-checked:border-blue-600 peer-checked:bg-white",
-              "hover:text-gray-600 hover:bg-gray-100",
-              "drop-shadow-sm"
+              radioGroupStyleConfig.label
             )}
           >
-            <div className="block">
+            <div className={clsx(
+              radioGroupStyleConfig.content
+            )}>
               {option.label}
             </div>
           </label>
