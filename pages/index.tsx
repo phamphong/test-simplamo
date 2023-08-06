@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { TabLayout } from '@/components/layout-tab';
+import { TabLayout } from '@/components/layout/layout-tab';
 import { GetStaticProps } from 'next';
 export default function Home() {
   return <>

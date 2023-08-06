@@ -28,7 +28,7 @@ const groupList = [
 ]
 
 const privateGroupList = [
-  { title: "Cask & Simplano", unread: 0, icon: AvatarIcon },
+  { title: "Cask & Simplamo", unread: 0, icon: AvatarIcon },
   { title: "Review HĐLĐ Anh Trí", unread: 0, icon: CodeIcon },
 ]
 

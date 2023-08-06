@@ -16,7 +16,7 @@ export const RootLayout: FC<RootLayoutProps> = ({ menu, children }) => {
         <FlexContainer.FlexGroupBetween className="w-full">
           <FlexContainer.FlexGroup className="gap-4">
             <div className="w-48 py-2 text-xl font-bold">
-              Simplano
+              Simplamo
             </div>
             {menu}
           </FlexContainer.FlexGroup>
