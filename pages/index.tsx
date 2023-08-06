@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { TabLayout } from '@/components/layout/layout-tab';
 export default function Home() {
   return <>
@@ -8,10 +7,8 @@ export default function Home() {
   </>
 }
 
-Home.getLayout = (page: ReactNode) => {
+Home.getMenu = () => {
   return (
-    <TabLayout value="target" >
-      {page}
-    </TabLayout>
+    <TabLayout value="indicator" />
   )
 }
