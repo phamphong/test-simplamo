@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { RateStyleConfig, rateStyleConfig } from "./style";
 import clsx from "clsx";
-import "rc-rate/assets/index.css";
 
 const Dots = ({ className, ...rest }: React.HTMLAttributes<HTMLDivElement>) =>
   <div {...rest} className={clsx(
