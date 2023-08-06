@@ -9,6 +9,6 @@ export default function Home() {
 
 Home.getMenu = () => {
   return (
-    <TabLayout value="indicator" />
+    <TabLayout />
   )
 }
